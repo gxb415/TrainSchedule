@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Schedule</title>
+
+	<!--css-->
+ 	<link rel="stylesheet" type="text/css" href="assets/style.css"> 
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container">
+
+      <div class="row">
+
+        <div class="jumbotron">
+
+          <h1>Train Scheduler</h1>
+          <p>A journey soon begins....</p>
+
+        </div>
+
+        <div class="panel panel-primary">
+
+          <div class="panel-heading">
+
+            <h3 class="panel-title">Up to Date Train Schedule</h3>
+
+          </div>
+
+          <div class="panel-body">
+
+            <table class="responsive-table" id="train-schedule">
+
+              <thead>
+
+                <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>ETA</th>
+                    <th>Next Arrival</th>
+                    <th>Frequency</th>
+                </tr>
+
+              </thead>
+
+              <tbody id="tableBody">
+             
+              </tbody>
+
+            </table>
+
+          </div>
+
+        </div>
+
+        <div class="panel panel-primary">
+
+          <div class="panel-heading">
+
+            <h3 class="panel-title">Add a Train</h3>
+
+          </div>
+
+          <div class="panel-body">
+
+            <form role="form" id="tableMargin">
+
+                <div class="form-group input-field">
+
+                  <label for="name-input">Train Name</label>
+
+                  <input type="text" class="form-control" id="name-input">
+
+                </div>
+
+                <div class="form-group input-field">
+
+                  <label for="destination">Destination</label>
+
+                  <input type="text" class="form-control" id="destination">
+
+                </div>
+
+                <div class="form-group">
+
+                  <label for="first-train">First Train Time (in military form HH:mm</label>
+
+                  <input type="time" class="form-control" id="first-train">
+                  
+                </div>
+
+                <div class="form-group input-field">
+
+                  <label for="frequency">Train Frequency</label>
+
+                  <input type="number" class="form-control" id="frequency" min="1">
+                  
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="add-data">Submit</button>
+            </form>
+
+          </div>
+
+        </div>
+
+      <div class=col-md-1">
+
+    </div>
+  <!-- Moment.js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+  <script src="assets/app.js"></script>
+  
+</body>
+</html>
